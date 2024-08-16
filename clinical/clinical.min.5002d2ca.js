@@ -20707,6 +20707,10 @@ angular.module('bahmni.clinical')
                 "ANC Program",
                 "Labour and Delivery Register"
             ]
+            $scope.VMMCforms= ["VMMC - Intake", "VMMC - Follow Up"]
+            $scope.age = $scope.patient.age;
+            $scope.Unger5_Forms = ["Under5"]
+            $scope.HEIforms = ["Exposed Infant Monitoring","HIV Exposed Infant Register"]
             // Form Code :: End
             init();
         }]);
