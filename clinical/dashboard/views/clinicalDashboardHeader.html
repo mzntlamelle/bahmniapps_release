@@ -45,7 +45,7 @@
                     <a ng-click="showBoard($index)">{{ board | titleTranslate }}</a>
                 </li>
             </ul>
-            <button class="confirm save-consultation" show-if-privilege="app:clinical:generate_id" ng-show="showUniqueIDGenerator" ng-click="generateAssignPatientId()" accesskey="{{'SAVE_ACCESS_KEY' | translate}}" ng-class="{'hideSaveText':availableBoards.length > 6}" ng-if="!retrospectiveEntry">
+            <button class="confirm save-consultation" show-if-privilege="app:clinical:generate_id" ng-show="showUniqueIDGenerator" ng-confirm-click="generateAssignPatientId()" accesskey="{{'SAVE_ACCESS_KEY' | translate}}" ng-class="{'hideSaveText':availableBoards.length > 6}" ng-if="!retrospectiveEntry">
                 <i class="fa fa-key fa-large"></i>
             </button>
 
