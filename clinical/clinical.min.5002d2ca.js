@@ -5066,6 +5066,23 @@ angular.module('bahmni.common.uiHelper')
             restrict: 'A',
             link: link
         };
+    });'use strict';
+
+angular.module('bahmni.common.uiHelper')
+    .directive('ngGenerateClick', function () {
+        var link = function (scope, element, attr) {
+            var msg = attr.confirmMessage || "Are you sure you want Generate New HIV Program ID?";
+            var clickAction = attr.ngConfirmClick;
+            element.bind('click', function () {
+                if (window.confirm(msg)) {
+                    scope.$apply(clickAction);
+                }
+            });
+        };
+        return {nerate
+            restrict: 'A',
+            link: link
+        };
     });
 
 'use strict';
